@@ -8,6 +8,9 @@ fun main() {
 
     val events = mutableListOf<Event>(event1, event2, event3, event4, event5, event6)
     println(events.toString())
+
+    val shortEvents = events.filter { it.duration < 60 }
+    println("Short Events: ${shortEvents.size}.")
 }
 
 data class Event(
@@ -25,5 +28,6 @@ enum class Daypart {
 
 Resultado:
 [Event(title=Wake up, description=Time to get up, daypart=MORNING, duration=0), Event(title=Eat breakfast, description=null, daypart=MORNING, duration=15), Event(title=Learn about Kotlin, description=null, daypart=AFTERNOON, duration=30), Event(title=Practice Compose, description=null, daypart=AFTERNOON, duration=60), Event(title=Watch latest DevBytes video, description=null, daypart=AFTERNOON, duration=10), Event(title=Check out latest Android Jetpack library, description=null, daypart=EVENING, duration=45)]
+Short Events: 5.
 
 */
