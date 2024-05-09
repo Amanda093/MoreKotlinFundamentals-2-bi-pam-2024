@@ -15,6 +15,8 @@ fun main() {
     val groupedEvents = events.groupBy { it.daypart }
     groupedEvents.forEach { (daypart, events) ->
     println("$daypart: ${events.size} events")
+
+    println("Last event of the day: ${events.last().title}")
 }
 }
 
@@ -35,7 +37,10 @@ Resultado:
 [Event(title=Wake up, description=Time to get up, daypart=MORNING, duration=0), Event(title=Eat breakfast, description=null, daypart=MORNING, duration=15), Event(title=Learn about Kotlin, description=null, daypart=AFTERNOON, duration=30), Event(title=Practice Compose, description=null, daypart=AFTERNOON, duration=60), Event(title=Watch latest DevBytes video, description=null, daypart=AFTERNOON, duration=10), Event(title=Check out latest Android Jetpack library, description=null, daypart=EVENING, duration=45)]
 Short Events: 5.
 MORNING: 2 events
+Last event of the day: Eat breakfast
 AFTERNOON: 3 events
+Last event of the day: Watch latest DevBytes video
 EVENING: 1 events
+Last event of the day: Check out latest Android Jetpack library
 
 */
