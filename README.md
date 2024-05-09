@@ -1,3 +1,7 @@
-
 ![alt text](image.png)
-Outros exercícios disponiveis nas branch desse repositorio
+
+<center>
+
+### os outros exercícios estão disponiveis nas branch desse repositório
+
+</center>
